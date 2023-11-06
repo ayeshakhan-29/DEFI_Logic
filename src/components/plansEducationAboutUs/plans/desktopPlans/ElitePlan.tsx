@@ -30,7 +30,7 @@ const ElitePlan: FC<ElitePlanProps> = ({
 	};
 
 	return (
-		<React.Fragment>
+		<>
 			<Box
 				sx={{
 					display: {
@@ -71,8 +71,8 @@ const ElitePlan: FC<ElitePlanProps> = ({
 					</div>
 				</PlanCardMobile>
 			</Box>
-		</React.Fragment>
+		</>
 	);
-};
+}
 
 export default ElitePlan;
