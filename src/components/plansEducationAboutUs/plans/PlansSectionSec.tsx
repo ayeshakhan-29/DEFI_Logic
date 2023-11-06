@@ -65,10 +65,16 @@ const PlansSectionSec = () => {
 			setFeatur6(!feature6);
 		}
 	};
+
 	return (
 		<React.Fragment>
 			<Container maxWidth="xl" sx={{ marginBottom: "40px" }} id="pricing">
-				<Box sx={sx.boxTow}>
+				<Box
+					sx={{
+						...sx.boxTow,
+						borderRadius: 5, // Rounded corners for the full section
+					}}
+				>
 					<Typography className={styles.textHeading} id="plans">
 						Plans
 					</Typography>
@@ -79,9 +85,8 @@ const PlansSectionSec = () => {
 						}}
 						className={styles.textJustify}
 					>
-						Payments can be made in either fiat or crypto (pay with $WETH to
-						subscribe anonymously via your Web3 wallet connected to a Discord
-						account).
+						Payments can be made in either fiat or crypto.<br></br>
+						Crypto payments allow you to subscribe anonymously (via web3 wallet connected with a Discord account)
 					</Typography>
 				</Box>
 
@@ -97,8 +102,8 @@ const PlansSectionSec = () => {
 							}}
 							sx={{
 								borderTopRightRadius: { xs: 0, sm: 0, md: 0, lg: 0 },
-								borderBottomLeftRadius: { xs: 5, sm: 5 }, // Rounded from below
-								borderBottomRightRadius: { xs: 5, sm: 5 }, // Rounded from below
+								borderBottomRightRadius: { xs: 0, sm: 0, md: 0, lg: 0 },
+
 								borderRadius: { xs: 5, sm: 5 },
 								marginBottom: { xs: 5, sm: 5, md: 0, lg: 0 },
 							}}
@@ -118,6 +123,7 @@ const PlansSectionSec = () => {
 							md={4}
 							sx={{
 								borderRadius: { xs: 5, sm: 5, md: 0, lg: 0 },
+								borderBottomRightRadius: { xs: 5, sm: 5, md: 0, lg: 0 },
 								marginBottom: { xs: 5, sm: 5, md: 0, lg: 0 },
 								backgroundColor: {
 									xs: "rgba(0, 0, 0, 0.4)",
@@ -141,9 +147,9 @@ const PlansSectionSec = () => {
 							md={4}
 							style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
 							sx={{
-								borderTopLeftRadius: { xs: 0, sm: 0, md: 0, lg: 0 },
-								borderBottomLeftRadius: { xs: 0, sm: 0, md: 0, lg: 0 },
-								borderBottomRightRadius: { xs: 0, sm: 0, md: 0, lg: 0 },
+								borderTopLeftRadius: { xs: 5, sm: 5, md: 0, lg: 0 },
+								borderBottomLeftRadius: { xs: 5, sm: 5, md: 0, lg: 0 },
+								borderBottomRightRadius: { xs: 5, sm: 5, md: 0, lg: 0 },
 								borderRadius: { xs: 5, sm: 5 },
 								marginBottom: { xs: 5, sm: 5, md: 0, lg: 0 },
 							}}
@@ -160,7 +166,7 @@ const PlansSectionSec = () => {
 					</Grid>
 				</Box>
 
-				<Box sx={{ paddingX: { xs: 0, sm: 0, md: 0 } }} marginTop={5}>
+				<Box sx={{ paddingX: { xs: 0, sm: 0, md: 0 } }} marginTop={3}>
 					{/* Mobile Plan components (conditionally rendered based on screen size) */}
 					<Grid container>
 						<Grid
@@ -207,7 +213,7 @@ const PlansSectionSec = () => {
 
 				{/* Rest of your code for buttons, etc. */}
 			</Container>
-		</React.Fragment>
+		</React.Fragment >
 	);
 };
 export default PlansSectionSec;

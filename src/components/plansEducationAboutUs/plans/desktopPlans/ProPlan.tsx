@@ -2,7 +2,6 @@ import React, { FC, useState } from "react";
 import { Box } from "@mui/material";
 import PlanCard, { PlanCardMobile } from "../../../shared/PlanCard";
 import LearnMoreAccordion from "../../../shared/LearnMoreAccordion";
-import Accordion from "../../../shared/Accordion";
 import data, { ProData } from "../plansdata";
 
 interface ProPlanProps {
