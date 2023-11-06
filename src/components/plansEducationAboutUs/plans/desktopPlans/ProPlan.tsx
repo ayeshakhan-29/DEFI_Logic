@@ -60,9 +60,10 @@ const ProPlan: FC<ProPlanProps> = ({
 							<div key={featureKey}>
 								{learnMoreOpen && (
 									<Accordion
-										title={ProData[featureKey].title}
-										description={ProData[featureKey].details}
-										isOpen={true}
+										title={ProData[featureKey as keyof typeof ProData].title}
+										description={ProData[featureKey as keyof typeof ProData].details}
+										isOpen={learnMoreOpen} // Use the learnMoreOpen state here
+										onClick={toggleLearnMore} // Keep the onClick prop for the Accordion
 										borderBottom
 									/>
 								)}

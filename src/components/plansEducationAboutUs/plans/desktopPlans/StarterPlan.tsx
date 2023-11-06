@@ -60,9 +60,10 @@ const StarterPlan: FC<StarterPlanProps> = ({
 							<div key={featureKey}>
 								{learnMoreOpen && (
 									<Accordion
-										title={StarterData[featureKey].title}
-										description={StarterData[featureKey].details}
-										isOpen={true}
+										title={StarterData[featureKey as keyof typeof StarterData].title}
+										description={StarterData[featureKey as keyof typeof StarterData].details}
+										isOpen={learnMoreOpen} // Use the learnMoreOpen state here
+										onClick={toggleLearnMore}
 										borderBottom
 									/>
 								)}
