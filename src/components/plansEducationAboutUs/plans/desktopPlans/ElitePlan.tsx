@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { Box } from "@mui/material";
 import PlanCard, { PlanCardMobile } from "../../../shared/PlanCard";
 import LearnMoreAccordion from "../../../shared/LearnMoreAccordion";
-import Accordion from "../../../shared/Accordion";
+import Accordion from "../../../shared/Accordion";  // Import your Accordion component
 import data, { EliteData } from "../plansdata";
 
 interface ElitePlanProps {
@@ -62,7 +62,8 @@ const ElitePlan: FC<ElitePlanProps> = ({
 									<Accordion
 										title={EliteData[featureKey].title}
 										description={EliteData[featureKey].details}
-										isOpen={true}
+										isOpen={learnMoreOpen} // Use the learnMoreOpen state here
+										onClick={toggleLearnMore} // Keep the onClick prop for the Accordion
 										borderBottom
 									/>
 								)}
