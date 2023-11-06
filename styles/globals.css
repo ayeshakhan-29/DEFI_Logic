@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #151624;
+	border: 1px solid gray;
+	border-radius: 8px;
+}
+
+#feature.swiper-slide,
+#feature.swiper-slide-active {
+	width: 315px !important;
+}
+@media (min-width: 425px) and (max-width: 600px) {
+	#feature.swiper-slide,
+	#feature.swiper-slide-active {
+		width: 365px !important;
+		padding-left: 30px;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: #9b67f7 !important;
+	top: var(--swiper-navigation-top-offset, 40%) !important;
+}
+.swiper-pagination-bullet {
+	background: #000 !important;
+}
+.swiper-pagination-bullet-active {
+	background: #f4f7f9 !important;
+}
+input[type="text"] {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	background-color: "#f4f7f9";
+	border-radius: 5;
+}
+input[type="text"]:placeholder-shown {
+	color: #435f83 !important;
+}
+
+.showcase-menu-social img:hover {
+	filter: brightness(0) saturate(100%) invert(57%) sepia(82%) saturate(539%) hue-rotate(293deg) brightness(93%) contrast(99%);
+}

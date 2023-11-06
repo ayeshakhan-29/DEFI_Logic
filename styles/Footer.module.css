@@ -1,0 +1,25 @@
+
+.background {
+	padding-bottom: 30px;
+	background: rgb(36, 16, 56);
+	background-blend-mode: multiply;
+}
+
+.linksBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: max-content;
+	margin-left: 15px;
+	gap: 20px;
+}
+.links {
+	font-family: var(--poppins-font);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #f4f7f9;
+}

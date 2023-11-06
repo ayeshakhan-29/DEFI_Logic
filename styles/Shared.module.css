@@ -1,0 +1,131 @@
+/* Filled Icon Component*/
+
+.filled {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: #f2f6f8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 18px;
+  height: 1240px;
+}
+.plantype {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  gap: 13px;
+}
+.planHeading {
+  color: #9b67f7;
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 21px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planHeadingType {
+  color: #f4f7f9;
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 135px;
+  /* height: 42px; */
+  margin-top: 7px;
+}
+
+.planHeadingTypeBelow {
+  color: #f4f7f9;
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 0px;
+  text-align: center;
+  max-width: 135px;
+  /* height: 42px; */
+  /* margin-top: 7px; */
+}
+.planHeadingFeatures {
+  color: #f4f7f9;
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 230px;
+}
+.planHeadingFeatures2 {
+  color: #f4f7f9;
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 190px;
+}
+.hr {
+  border: 1px solid rgba(155, 103, 247, 0.2);
+  width: 100%;
+  margin: 0;
+}
+.featureTop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  padding-top: 12px;
+}
+.featureCenter {
+  height: 150px;
+}
+.buttonArea {
+  margin-top: 15px;
+  text-align: center;
+}
+/* For Mobile Plan Card*/
+.boxMobile {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  /* background: #1d2435; */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: max-content;
+}
+.boxMobileCenter {
+  margin-top: 5px;
+}
+.featurearea{
+  height: 42px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.button {
+  background: linear-gradient(to right, #ED6AA9 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}

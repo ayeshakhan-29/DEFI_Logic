@@ -1,0 +1,69 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLinks {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.navItems {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #f4f7f9;
+}
+
+
+.actions {
+  gap: 20px;
+}
+
+.mobileLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0px 16px; */
+  padding-top: 5px;
+}
+.logo {
+  margin-top: 5px;
+}
+.mobilenavLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.mobileNav {
+  height: 100vh;
+  background: url('../src/assets/images/background.png');
+  background-size: 100% 100%;
+  background-color: #000;
+}
+
+/* NavLink Css */
+.link {
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: '#ADADB0';
+}
+.innerLink {
+  text-decoration: none;
+  color: '#ADADB0';
+}

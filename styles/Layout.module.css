@@ -1,0 +1,40 @@
+.background {
+	background: url("../src/assets/images/background.png");
+	background-size: 100% 100%;
+}
+
+.textHeading {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 22px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #f4f7f9;
+	padding-left: 20px;
+}
+.textNormal {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px !important;
+	line-height: 22px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #f4f7f9;
+	padding-left: 10px;
+}
+@media (max-width: 1024px) {
+	.textNormal {
+		font-family: "Poppins", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px !important;
+		line-height: 22px;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: #f4f7f9;
+		padding-left: 10px;
+	}
+}
