@@ -60,8 +60,8 @@ const ElitePlan: FC<ElitePlanProps> = ({
 							<div key={featureKey}>
 								{learnMoreOpen && (
 									<Accordion
-										title={EliteData[featureKey].title}
-										description={EliteData[featureKey].details}
+										title={EliteData[featureKey as keyof typeof EliteData].title}
+										description={EliteData[featureKey as keyof typeof EliteData].details}
 										isOpen={learnMoreOpen} // Use the learnMoreOpen state here
 										onClick={toggleLearnMore} // Keep the onClick prop for the Accordion
 										borderBottom
