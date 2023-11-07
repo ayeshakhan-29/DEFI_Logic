@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Box, Typography, Grid } from "@mui/material";
+import { Container, Box, Typography, Grid, useMediaQuery } from "@mui/material";
 import styles from "../../../../styles/PlansEducationAboutUs.module.css";
 import Accordion from "../../shared/Accordion";
 import StarterPlanMobile from "./mobilePlans/StarterPlanMobile";
@@ -13,81 +13,85 @@ import sx from "./sx";
 import GenericButton from "../../shared/Button";
 
 const PlansSectionSec = () => {
-	const [feature1, setFeatur1] = useState<boolean>(false);
-	const [feature2, setFeatur2] = useState<boolean>(true);
-	const [feature3, setFeatur3] = useState<boolean>(false);
-	const [feature4, setFeatur4] = useState<boolean>(false);
-	const [feature5, setFeatur5] = useState<boolean>(false);
-	const [feature6, setFeatur6] = useState<boolean>(false);
+	const [feature1, setFeature1] = useState<boolean>(false);
+	const [feature2, setFeature2] = useState<boolean>(true);
+	const [feature3, setFeature3] = useState<boolean>(false);
+	const [feature4, setFeature4] = useState<boolean>(false);
+	const [feature5, setFeature5] = useState<boolean>(false);
+	const [feature6, setFeature6] = useState<boolean>(false);
 
 	const handleFeatures = (title: string) => {
 		if (title === "Feature 1") {
-			setFeatur1(!feature1);
-			setFeatur2(false);
-			setFeatur3(false);
-			setFeatur4(false);
-			setFeatur5(false);
-			setFeatur6(false);
+			setFeature1(!feature1);
+			setFeature2(false);
+			setFeature3(false);
+			setFeature4(false);
+			setFeature5(false);
+			setFeature6(false);
 		} else if (title === "Feature 2") {
-			setFeatur1(false);
-			setFeatur2(!feature2);
-			setFeatur3(false);
-			setFeatur4(false);
-			setFeatur5(false);
-			setFeatur6(false);
+			setFeature1(false);
+			setFeature2(!feature2);
+			setFeature3(false);
+			setFeature4(false);
+			setFeature5(false);
+			setFeature6(false);
 		} else if (title === "Feature 3") {
-			setFeatur1(false);
-			setFeatur2(false);
-			setFeatur3(!feature3);
-			setFeatur4(false);
-			setFeatur5(false);
-			setFeatur6(false);
+			setFeature1(false);
+			setFeature2(false);
+			setFeature3(!feature3);
+			setFeature4(false);
+			setFeature5(false);
+			setFeature6(false);
 		} else if (title === "Feature 4") {
-			setFeatur1(false);
-			setFeatur2(false);
-			setFeatur3(false);
-			setFeatur4(!feature4);
-			setFeatur5(false);
-			setFeatur6(false);
+			setFeature1(false);
+			setFeature2(false);
+			setFeature3(false);
+			setFeature4(!feature4);
+			setFeature5(false);
+			setFeature6(false);
 		} else if (title === "Feature 5") {
-			setFeatur1(false);
-			setFeatur2(false);
-			setFeatur3(false);
-			setFeatur4(false);
-			setFeatur5(!feature5);
-			setFeatur6(false);
+			setFeature1(false);
+			setFeature2(false);
+			setFeature3(false);
+			setFeature4(false);
+			setFeature5(!feature5);
+			setFeature6(false);
 		} else if (title === "Feature 6") {
-			setFeatur1(false);
-			setFeatur2(false);
-			setFeatur3(false);
-			setFeatur4(false);
-			setFeatur5(false);
-			setFeatur6(!feature6);
+			setFeature1(false);
+			setFeature2(false);
+			setFeature3(false);
+			setFeature4(false);
+			setFeature5(false);
+			setFeature6(!feature6);
 		}
 	};
 
+	const isMobileView = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
 	return (
 		<React.Fragment>
-			<Container maxWidth="xl" sx={{ marginBottom: "40px" }} id="pricing">
+			<Container maxWidth="xl" sx={{ marginBottom: isMobileView ? "40px" : "0" }} id="pricing">
 				<Box
 					sx={{
 						...sx.boxTow,
 						borderRadius: 5, // Rounded corners for the full section
 					}}
 				>
-					<Typography className={styles.textHeading} id="plans">
+					<Typography className={styles.textHeading} id="plans" sx={{ marginTop: !isMobileView ? "0" : undefined }}>
 						Plans
 					</Typography>
-					<Typography
-						sx={{
-							marginTop: { xs: "-10px", sm: "0px", md: "0px" },
-							marginLeft: { xs: "18px", sm: "0px", md: "0px" },
-						}}
-						className={styles.textJustify}
-					>
-						Payments can be made in either fiat or crypto.<br></br>
-						Crypto payments allow you to subscribe anonymously (via web3 wallet connected with a Discord account)
-					</Typography>
+					{!isMobileView && (
+						<Typography
+							sx={{
+								marginTop: { xs: "-10px", sm: "0px", md: "0px" },
+								marginLeft: { xs: "18px", sm: "0px", md: "0px" },
+							}}
+							className={styles.textJustify}
+						>
+							Payments can be made in either fiat or crypto.<br></br>
+							Crypto payments allow you to subscribe anonymously (via web3 wallet connected with a Discord account)
+						</Typography>
+					)}
 				</Box>
 
 				<Box sx={{ paddingX: { xs: 0, sm: 0, md: 0 } }} marginTop={5}>
@@ -213,7 +217,8 @@ const PlansSectionSec = () => {
 
 				{/* Rest of your code for buttons, etc. */}
 			</Container>
-		</React.Fragment >
+		</React.Fragment>
 	);
 };
+
 export default PlansSectionSec;
