@@ -8,7 +8,7 @@ const BuyTradingViewIndicator = () => {
     return (
         <React.Fragment>
             <Grid>
-                <Container maxWidth="xl" sx={{ marginBottom: 6 }} >
+                <Container maxWidth="xl" sx={{ marginBottom: "6rem", marginTop: "6rem" }} >
                     <Grid container sx={sx.col2} >
                         <Box sx={{ marginTop: { xs: "-50px", sm: "0px", md: "0px" }, }} className={styles.report} style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}>
                             <Typography className={styles.textFeature} id='payperreport'>

@@ -4,11 +4,11 @@ import Button from "../../shared/Button";
 import styles from "../../../../styles/PlansEducationAboutUs.module.css";
 import sx from "./sx";
 
-const PayPerReport = () => {
+const AiResearch = () => {
     return (
         <React.Fragment>
             <Grid>
-                <Container maxWidth="xl" sx={{ marginBottom: 6 }} >
+                <Container maxWidth="xl" sx={{ marginBottom: "6rem" }} >
                     <Grid container sx={sx.col2} >
                         <Box sx={{ marginTop: { xs: "-50px", sm: "0px", md: "0px" }, }} className={styles.report} style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}>
                             <Typography className={styles.textFeature} id='payperreport'>
@@ -72,4 +72,4 @@ const PayPerReport = () => {
         </React.Fragment>
     );
 };
-export default PayPerReport;
+export default AiResearch;

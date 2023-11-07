@@ -15,5 +15,6 @@ const sx = {
     display: { xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' },
     marginTop: '9px',
   },
+
 };
 export default sx;
