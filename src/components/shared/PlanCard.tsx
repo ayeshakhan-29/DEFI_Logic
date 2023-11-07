@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Box, Typography, Collapse } from "@mui/material";
+import { SxProps } from "@mui/system";
 import HorizontalRuleRoundedIcon from "@mui/icons-material/HorizontalRuleRounded";
 import GenericButton from "./Button";
 import styles from "../../../styles/Shared.module.css";
@@ -13,6 +14,7 @@ interface PlanCardProps {
 	isOpen: boolean;
 	children: React.ReactNode;
 	onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+	sx?: SxProps;
 }
 
 interface PlanCardMobileProps {
