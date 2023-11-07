@@ -47,6 +47,7 @@ const ToolsAndResearch = () => {
 							<Typography
 								sx={{
 									marginTop: { xs: "-20px", sm: "0px", md: "0px" },
+									marginRight: "2rem"
 								}}
 								className={styles.textHeading}>
 								TradingView indicators
@@ -63,40 +64,7 @@ const ToolsAndResearch = () => {
 								experiences to hone your skills and become a more adept market
 								navigator.
 							</Typography>
-							{/* <Box
-								sx={{
-									display: { xs: "none", sm: "flex", md: "flex" },
-									justifyContent: "left",
-								}}
-							>
-								<OutlinedButton
-									width="270px"
-									style={{ marginTop: 20 }}
-									endIcon={
-										<Image src={assets.forward} alt="Forward" width={15} />
-									}
-									className={styles.textNormal}
-								>
-									Learn more about our tools
-								</OutlinedButton>
-							</Box> */}
-							{/* <Box
-								sx={{
-									display: { xs: "flex", sm: "none", md: "none" },
-									justifyContent: "center",
-								}}
-							>
-								<OutlinedButton
-									width="270px"
-									style={{ marginTop: 20 }}
-									endIcon={
-										<Image src={assets.forward} alt="Forward" width={15} />
-									}
-									className={styles.textNormal}
-								>
-									Learn more about our tools
-								</OutlinedButton>
-							</Box> */}
+
 						</Box>
 					</Grid>
 				</Grid>

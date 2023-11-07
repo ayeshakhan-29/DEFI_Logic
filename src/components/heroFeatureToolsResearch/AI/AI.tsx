@@ -43,24 +43,12 @@ const AI = () => {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid item lg={6} md={6} sm={12} xs={12}>
+                    <Grid item lg={6} md={6} sm={12} xs={12} sx={{ order: { xs: 1, sm: 1, md: 2, lg: 2 } }}>
                         <Box
                             width={"100%"}
                             sx={{
-                                display: { xs: "flex", sm: "flex", md: "none", lg: "none" },
+                                display: "flex",
                                 justifyContent: "center",
-                            }}>
-                            <div>
-                                <VideoPlayer videoUri={videoUri} />
-                            </div>
-                        </Box>
-
-                        <Box
-                            width={"100%"}
-                            sx={{
-                                display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
-                                justifyContent: "center",
-                                paddingRight: "10px",  // Add padding for space on the right
                             }}>
                             <div>
                                 <VideoPlayer videoUri={videoUri} />
