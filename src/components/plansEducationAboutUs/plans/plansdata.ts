@@ -1,16 +1,15 @@
 export const StarterData = {
 	feature1: {
 		title: "Select Channel Engagement and View-Only Access to Others",
-		details:
-			"Embark on a transformative financial journey with full access to general, self-awareness, and personal development channels. Benefit from view-only access to exclusive trading and investment channels featuring DeFi, Web3, Alpha, Memecoins, CEX/DEX, reporting, analytics, stocks, and futures, all guided by skilled analysts and proven experts.",
+		details: "View-only access to main channels Write access in general channels"
 	},
 	feature2: {
-		title: "Daily Dose Research",
+		title: "Daily Dose ",
 		details:
 			"Stay informed with view-only access to in-depth market and crypto reports, meticulously crafted using advanced analytics and technology to provide you with the most relevant and timely insights for your investment decisions.",
 	},
 	feature3: {
-		title: "Bi-Weekly AMA Attendance",
+		title: "Bi-Weekly Community Call Attendance",
 		details:
 			"Expand your market knowledge with our bi-weekly gatherings, TA Tuesdays and Symposium Sundays, featuring comprehensive technical analysis, Daily Dose research reviews, live demos, and interactive Q&A sessions that enhance your understanding of crypto and broader market realms.",
 	},
@@ -20,7 +19,7 @@ export const StarterData = {
 			"Receive lower-priority access to our dedicated support desk, accommodating both entry-level and experienced investors and traders in the crypto sphere, and consideration for legacy markets, for a seamless community experience.",
 	},
 	feature5: {
-		title: "Bots & Alerts",
+		title: "TradingView Indicators",
 		details:
 			"Stay vigilant with real-time external messaging for security threats, and gain an edge with our NFT Whitelist Bot. Remain informed and up-to-date through news feeds and press releases streamed directly to you.",
 	},

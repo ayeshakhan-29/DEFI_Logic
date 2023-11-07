@@ -1,3 +1,4 @@
+"use client"
 import React, { FC } from "react";
 import PlansSection from "./plans/PlansSection";
 import EducatioAndAboutUs from "./educatioAndAboutUs/EducatioAndAboutUsSection";

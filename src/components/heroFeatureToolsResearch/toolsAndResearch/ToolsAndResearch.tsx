@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from 'next/dynamic';
 import { Container, Box, Typography, Grid } from "@mui/material";
 import ReactPlayer from 'react-player';
 import VideoPlayer from "./VideoPlayer";
@@ -6,6 +7,11 @@ import styles from "../../../../styles/HeroFeatureToolsResearch.module.css";
 import { assets } from "../../../assets";
 import sx from "./sx";
 import GenericButton, { OutlinedButton } from "../../shared/Button";
+
+
+const DynamicVideoPlayer = dynamic(() => import('./VideoPlayer'), {
+	ssr: false, // Set ssr to false to render on the client side.
+});
 
 const ToolsAndResearch = () => {
 	const videoUri = 'https://www.youtube.com/embed/Yj2NZaefbl0?si=cVyFUlTgL3jkGsSS'; // Replace with the actual video URL
@@ -16,23 +22,27 @@ const ToolsAndResearch = () => {
 				<Grid container sx={sx.col2}>
 					<Grid item lg={6} md={6} sm={12} xs={12}>
 						<Box
+
 							width={"100%"}
 							sx={{
 								display: { xs: "flex", sm: "flex", md: "none", lg: "none" },
 								justifyContent: "center",
 							}}>
-							<div> <VideoPlayer videoUri={videoUri} />
+							<div >
+								<DynamicVideoPlayer videoUri={videoUri} />
 							</div>
 						</Box>
 
 						<Box
+
 							width={"100%"}
 							sx={{
 								display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
 								justifyContent: "center",
 							}}>
 							<div>
-								<VideoPlayer videoUri={videoUri} />							</div>
+								<DynamicVideoPlayer videoUri={videoUri} />
+							</div>
 						</Box>
 					</Grid>
 					<Grid

@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client"
 import React, { FC, useState, useEffect } from "react";
 import { Container, Grid } from "@mui/material";
 

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import { Container, Box, Typography, Grid, useMediaQuery } from "@mui/material";
 import styles from "../../../../styles/PlansEducationAboutUs.module.css";

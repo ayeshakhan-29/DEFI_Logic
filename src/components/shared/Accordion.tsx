@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { Box, IconButton, Typography } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
+import { Box } from "@mui/system";
 import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Collapse from '@mui/material/Collapse';
@@ -89,7 +90,7 @@ export const ViewFeautureAccordion: FC<ViewFeatureAccordion> = ({ isOpen, childr
             >
                 <div className={styles.viewfeatureHeader} onClick={onClick}>
                     <Typography className={styles.featureText} sx={isOpen ? sx.closeText : sx.viewFeaturesText}>
-                        {isOpen ? 'Close' : 'View features'}
+                        {isOpen ? 'Close' : 'Learn More'}
                     </Typography>
                     <IconButton size="small" onClick={onClick}>
                         {isOpen ? <CloseRoundedIcon sx={sx.icon} /> : <ArrowDownwardRoundedIcon sx={sx.icon} />}
@@ -104,5 +105,3 @@ export const ViewFeautureAccordion: FC<ViewFeatureAccordion> = ({ isOpen, childr
 }
 
 export default Accordion;
-
-

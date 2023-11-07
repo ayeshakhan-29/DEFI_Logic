@@ -1,3 +1,4 @@
+"use client"
 import React, { FC } from "react";
 import { Container, Grid, Link, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";

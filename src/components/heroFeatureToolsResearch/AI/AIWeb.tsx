@@ -1,10 +1,15 @@
+import dynamic from 'next/dynamic';
 import React from "react";
 import { Container, Box, Typography, Grid } from "@mui/material";
-import VideoPlayer from "../toolsAndResearch/VideoPlayer";
 import styles from "../../../../styles/HeroFeatureToolsResearch.module.css";
 import { assets } from "../../../assets";
 import sx from "./sx";
 import GenericButton, { OutlinedButton } from "../../shared/Button";
+
+
+const VideoPlayer = dynamic(() => import('../toolsAndResearch/VideoPlayer'), {
+    ssr: false, // Set ssr to false to render on the client side.
+});
 
 const AIWeb = () => {
     const videoUri = 'https://www.youtube.com/embed/Yj2NZaefbl0?si=cVyFUlTgL3jkGsSS'; // Replace with the actual video URL

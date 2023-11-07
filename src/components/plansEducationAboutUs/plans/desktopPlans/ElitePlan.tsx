@@ -1,5 +1,7 @@
+"use client"
 import React, { FC, useState } from "react";
-import { Box } from "@mui/material";
+// import { Box } from "@mui/material";
+import { Box } from "@mui/system";
 import PlanCard, { PlanCardMobile } from "../../../shared/PlanCard";
 import LearnMoreAccordion from "../../../shared/LearnMoreAccordion";
 import Accordion from "../../../shared/Accordion";  // Import your Accordion component

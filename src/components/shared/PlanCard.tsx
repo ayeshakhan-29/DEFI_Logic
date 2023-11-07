@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import { Box, Typography, Collapse } from "@mui/material";
+import { Typography, Collapse } from "@mui/material";
+import { Box } from "@mui/system";
 import { SxProps } from "@mui/system";
 import HorizontalRuleRoundedIcon from "@mui/icons-material/HorizontalRuleRounded";
 import GenericButton from "./Button";
